@@ -1,7 +1,6 @@
 .introducao-bg {
-  background-color: #000000;
-  color: #ffffff;
-  box-shadow: 0 -120px #ffffff inset;
+  background-color: var(--cor-12);
+  box-shadow: 0 -120px var(--cor-0) inset;
 }
 .introducao {
   display: grid;
@@ -21,13 +20,10 @@
 
 .introducao-conteudo h1 {
   margin-bottom: 32px;
-  color: #ffffff;
   font-size: 4rem;
   line-height: 1.125;
 }
-.introducao-conteudo h1 span {
-  color: #ffbb00;
-}
+
 .introducao-conteudo p {
   margin-bottom: 32px;
   color: #b2b2b2;
@@ -45,9 +41,9 @@
 }
 @media (max-width: 800px) {
   .introducao-bg {
-    background-color: #111111;
+    background-color: var(--cor-11);
     padding-top: 40px;
-    box-shadow: inset 0 -60px #ffffff;
+    box-shadow: inset 0 -60px var(--cor-0);
   }
   .introducao {
     grid-template-columns: 1fr;

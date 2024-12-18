@@ -11,6 +11,11 @@ ul {
 }
 a {
   text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .header-bg {
@@ -24,8 +29,6 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 .header-menu {
   display: flex;
@@ -76,4 +79,56 @@ a {
     padding: 8px 12px;
     font-size: 14px;
   }
+}
+
+.introducao-bg {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 -120px #ffffff inset;
+}
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+.introducao img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.introducao-conteudo h1 {
+  margin-bottom: 32px;
+  color: #ffffff;
+  font-size: 4rem;
+  line-height: 1.125;
+}
+.introducao-conteudo h1 span {
+  color: #ffbb00;
+}
+.introducao-conteudo p {
+  margin-bottom: 32px;
+  color: #b2b2b2;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.introducao-conteudo a {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #332200;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.33;
+}
+.introducao-conteudo a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
 }

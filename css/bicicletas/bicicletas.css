@@ -66,9 +66,6 @@ p {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .titulo span {
-    font-size: 0.875rem;
-  }
   .bicicletas-bg:nth-child(odd) {
     background: var(--cor-11);
   }

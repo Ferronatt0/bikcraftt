@@ -12,6 +12,9 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  .titulo > span {
+    font-size: 0.875rem;
+  }
   .titulo p {
     font-size: 1rem;
     text-transform: lowercase;

@@ -1,0 +1,53 @@
+.perguntas {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.perguntas h2 {
+  margin-bottom: 80px;
+}
+.perguntas img {
+  transition: 0.2s;
+}
+.perguntas div:hover img {
+  transform: rotate(180deg);
+}
+
+.perguntas div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 20px;
+  gap: 8px;
+  border-radius: 4px;
+  align-items: center;
+}
+.perguntas dt {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.perguntas dt::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  display: inline-block;
+  margin-right: 4px;
+}
+.perguntas dd {
+  max-width: 75ch;
+  padding: 0px 14px;
+  grid-column: 1/-1;
+}
+.perguntas div:nth-child(odd) {
+  background-color: var(--cor-1);
+}
+
+@media (max-width: 800px) {
+  .perguntas {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .perguntas h2 {
+    margin-bottom: 40px;
+  }
+}

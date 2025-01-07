@@ -1,34 +1,36 @@
 .vantagens-bg {
   background-color: var(--cor-12);
 }
+
 .vantagens {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-.vantagens h2 {
-  margin-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.vantagens-item {
+.vantagens h2 {
+  margin-bottom: 60px;
+}
+
+.vantagens ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px 80px;
+}
+
+.vantagens h3,
+.vantagens img {
+  margin-bottom: 8px;
 }
 
 @media (max-width: 800px) {
-  .vantagens-item {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 600px) {
   .vantagens {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .vantagens h2 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
-  .vantagens-item {
-    grid-template-columns: 1fr;
+  .vantagens ul {
+    gap: 20px;
   }
 }
